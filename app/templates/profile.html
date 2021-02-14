@@ -1,0 +1,36 @@
+{% extends'base.html' %}
+{% block main %}
+
+<body>
+<header id="header">
+<div class="container">
+    <img src="{{url_for('static', filename='profile_pic.png')}}" alt="">
+    <h1 class="header">Mary Jane</h1>
+    <p class="header">@maryinlove</p>
+    <p class="header">Kingston, Jamaica</p>
+    <p class="header">Joined {{ date }}</p>
+</div>
+</header>
+<main>
+<div class="container">
+    <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos asperiores obcaecati cupiditate itaque at distinctio vel non maxime ipsum rerum, nisi consectetur maiores aperiam quaerat sint tempora eos? Dolore, aspernatur?</p>
+    
+    <div class="stats">
+        <div>
+            <h5>7</h5>
+            <p class="desc">Posts</p>
+        </div>
+        <div>
+            <h5>0</h5>
+            <p class="desc">Following</p>
+        </div>
+        <div>
+            <h5>1M</h5>
+            <p class="desc">Followers</p>
+        </div>
+    </div>
+    <button>Follow</button>
+</div>
+</main>
+</body>
+{% endblock %}
